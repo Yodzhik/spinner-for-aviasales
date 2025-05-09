@@ -2,7 +2,7 @@
 
 Добро пожаловать в самый очаровательный проект-спиннер, который вы когда-либо видели! Забудьте о скучных крутилках – здесь вас ждет захватывающее авиапутешествие с нашим бесстрашным пилотом-котом на борту фирменного "Тук-тук-тука"!
 
-![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/Yodzhik/spinner-for-aviasales/blob/main/src/assets/tuc-tuc-tuc.gif))
+![](https://github.com/Yodzhik/spinner-for-aviasales/blob/main/src/assets/tuc-tuc-tuc.gif)
 
 ## ✨ Что это такое?
 
