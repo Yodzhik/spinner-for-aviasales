@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 16px;
+}
+
+.card {
+  min-height: 175px;
+  min-width: 175px;
+  background-color: rgba(76, 84, 97, 0.04);
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.cardAirplane {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 100px;
+  height: auto;
+  transform: translateY(-50%);
+  animation-name: flyInOneCard;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cardsContainer .card:nth-child(1) .cardAirplane {
+  animation-delay: 0s;
+}
+.cardsContainer .card:nth-child(2) .cardAirplane {
+  animation-delay: 1s;
+}
+.cardsContainer .card:nth-child(3) .cardAirplane {
+  animation-delay: 2s;
+}
+.cardsContainer .card:nth-child(4) .cardAirplane {
+  animation-delay: 3s;
+}
+
+@keyframes flyInOneCard {
+  0% {
+    left: -100%;
+  }
+  12.5% {
+    left: 50%; 
+    transform: translateX(-50%) translateY(-50%);
+  }
+  25% {
+    left: 200%;
+    transform: translateX(0) translateY(-50%);
+  }
+  25.01%, 100% {
+    left: -100%; 
+    transform: translateX(0) translateY(-50%);
+  }
+}
